@@ -1,0 +1,448 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+@font-face {
+	font-family: 'Gotham Rounded';
+	src: url('fonts/GothamRounded-Bold.woff2') format('woff2'),
+		url('fonts/GothamRounded-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Rounded';
+	src: url('fonts/GothamRounded-Light.woff2') format('woff2'),
+		url('fonts/GothamRounded-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Rounded';
+	src: url('fonts/GothamRounded-Book.woff2') format('woff2'),
+		url('fonts/GothamRounded-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+    font-family: Gotham Rounded, sans-serif;
+    font-size: 16dp;
+    color: #333333;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(3.jpg);
+    /* background: linear-gradient(120deg, #ffd913,#fa4365, #a31377, #86578f); */
+    
+}
+
+.box{
+  
+    min-width: 20%;
+    max-width: 50%;
+    min-height: 200px;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    /* margin: 30px auto; */
+    /* background: linear-gradient(360deg, #86578f,  #261f2b); */
+    /* box-shadow: 0 27px 87px rgba(0,0,0,0.37); */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow:0px 0px 13px 13px Violet;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5));
+
+}
+
+.box-img{
+   
+    width: fit-content;
+    /* margin: 25% 31% 0px 31%;  */
+    color: #fff;
+    font-family: Righteous, sans-serif;
+    font-size: 27px;
+    margin-left: auto;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box-text{
+    /* border: 1px solid black; */
+    /* float: left; */
+    width: fit-content;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -50px;
+    color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box-text h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #2e2e2e;
+    margin-bottom: 45px;
+}
+
+.box-text p{
+    font-size: 14px;
+    font-weight: 4S00;
+    color: #2e2e2e;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    margin-bottom: 15px;
+}
+
+.title{
+    
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Trade Winds, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* margin: 20px auto; */
+    transition:all ease 400ms;
+    text-align: center;
+    margin-top: 50px;
+    
+    /* font-family: 'Federant'; */
+    /* font-family: 'Righteous'; */
+    /* font-family: 'Fredoka One'; */
+    /* margin-right: auto; */ 
+    /* color: inherit;   */
+}
+
+/* h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+} */
+
+/* .title:hover {
+    box-shadow:0px 0px 5px 5px Violet;
+    
+} */
+
+.btn{
+    background-color: #ffd913;
+    border: none;
+    color: #000;
+    padding: 10px 25.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;  
+    border-radius: 7px;
+    margin-top: 2px;
+    transition:all ease 400ms;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+.btn:hover {
+    box-shadow:0px 0px 5px 5px Violet;
+}
+
+li, a button{
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+}
+/* header{
+     display: flex;
+     justify-content: space-between; 
+    align-items: center; 
+    padding: 22px 10% ;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    margin-left: 4%;
+    margin-right: 11%; 
+} */
+
+#navSocial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a{
+    transition:all ease 400ms;
+    border: none;
+    border-radius: 50%;
+}
+
+/* .navLinks li a:hover{
+    box-shadow:0px 0px 5px 5px Violet;
+} */
+
+
+
+/* .navLinks li a :hover{
+    color: #0088a9
+} */
+
+#btnNewBirthdate{
+    
+    font-family: Montserrat, sans-serif;
+    padding: 9px 25px;
+    background-color: #fa4365;
+    width: 65%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition:all ease 400ms;
+    border: none;
+    border-radius: 7px;
+    font-size: small;
+    font-weight: bold;
+}
+
+#btnNewBirthdate:hover{
+    box-shadow:0px 0px 5px 5px Violet;
+}
+
+button{
+    padding: 6px 10px;
+    /* background-color:  rgba(0,136,169,1); */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+}
+/* button:hover{
+    background-color:  rgba(0,136,169,0.8);
+} */
+
+
+footer{
+    display: flex;
+    justify-content:space-between; /*flex-end */
+   align-items: center;
+}
+
+#birthDate{
+    height:35px;
+    width: 200px;
+    transition:all ease 400ms;
+    box-shadow:0px 0px 1px 1px Violet;
+    margin-top: 20px;
+    font-family: Gotham Rounded, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: lighten(#2f2f2f,40%);
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  padding: 0 3px;
+  color: #000;
+
+}
+  
+  
+  #birthDate:hover{
+    box-shadow:0px 0px 5px 5px Violet;
+  }
+
+  #age{
+      /* border: 1px solid; */
+        letter-spacing: 1px;
+        margin-top: -40px;
+        font-family: Gotham Rounded, sans-serif;
+        font-size: 17px;
+        /* text-transform:capitalize; */
+        background-color: lighten(#2f2f2f,40%);
+        padding-bottom: 5px;
+        color: #fff;
+  }
+
+  .fixed-footer{
+      width: 100%;
+      padding: 4px 0;
+      color: #fff;
+      background: linear-gradient(45deg, #86578f,  #261f2b);
+    text-align: center;
+    border:none;
+    text-transform: uppercase;
+    font-family: 'Yatra One';
+    margin-top: 2.05%;
+    
+   
+  }
+
+  #btnContact{
+      background-color:  #000;
+      border: none;
+      border-radius: 7px;
+      font-size: 12px;
+      font-family: 'Yatra One';
+      transition:all ease 400ms;
+  }
+
+  #btnContact:hover {
+    box-shadow:0px 0px 5px 5px Violet;
+}
+
+  #ageText{
+    font-family: Righteous, sans-serif;
+    font-size: 35px;
+    width: 26.5%;
+    padding-top: 40px;
+    padding-bottom: 0;
+    /* border: 1px solid; */
+  }
+
+
+  @media(max-width: 1024px){
+
+    .box{
+        min-width: 20%;
+        max-width: 60%;
+        min-height: 200px;
+        max-height: fit-content;
+        margin: 50px auto;
+        
+    }
+    
+
+
+  }
+
+
+  @media(max-width: 800px){
+
+    .box{
+
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+        
+    }
+    
+    .box-img{
+   
+        width: fit-content;
+        /* margin: 25% 31% 0px 31%;  */
+        color: #fff;
+        font-family: Gotham Rounded, sans-serif;
+        font-size: 27px;
+        margin: 40px auto;
+    }
+
+    .box-text{
+        /* border: 1px solid black; */
+        /* float: left; */
+       margin: 0 auto;
+       margin-top: -80px;
+    }
+
+  }
+
+  @media(max-width: 500px){
+
+    .box{
+
+        min-width: 80%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+        
+    }
+
+    .box-img{
+        width: fit-content;
+        /* margin: 25% 31% 0px 31%;  */
+        color: #fff;
+        font-family: Gotham Rounded, sans-serif;
+        font-size: 27px;
+        margin: 40px auto;
+    }
+
+    .title{
+        font-size: 25px;
+    }
+    
+  }
+
+  @media(max-width: 300px){
+
+    .box{
+    
+        min-width: 90%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+        
+    }
+
+    .box-img{
+        width: fit-content;
+        /* margin: 25% 31% 0px 31%;  */
+        color: #fff;
+        font-family: Gotham Rounded, sans-serif;
+        font-size: 27px;
+        margin: 40px auto;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
